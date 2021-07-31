@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 <body>
-    
+    <h2>User Details</h2>
+
+    <form action="#">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" value=""><br>
+
+      <input type="radio" class="genderDetail" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+
+      <input type="radio" class="genderDetail" id="css" name="gender" value="female">
+      <label for="css">Female</label><br>
+
+      <label for="address">Address:</label><br>
+      <textarea name="address" id=address rows="05" cols="20"></textarea><br>
+
+      <label for="education">Choose education...</label>
+      <select id="education" name="education" size="3">
+        <option value="matriculation">Matriculation</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="bachelors">Bachelors</option>
+        <option value="masters">Masters</option>
+    </select><br>
+
+    <label for="profession">Choose profession...</label>
+    <select id="profession" name="profession" size="3">
+        <option value="doctor">Doctor</option>
+        <option value="engineer">Engineer</option>
+        <option value="pilot">Pilot</option>
+        <option value="teacher">Teacher</option>
+    </select><br><br>
+
+    <input id="submit" value="Submit">
+</form>
+
+<div id="personDetails">
+    <p id="nameDetail"></p>
+    <p id="genderDetail"></p>
+    <p id="addressDetail"></p>
+    <p id="educationDetail"></p>
+    <p id="professionDetail"></p>
+</div>
 </body>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src="app.js"></script>
 </html>
